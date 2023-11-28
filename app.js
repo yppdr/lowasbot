@@ -25,7 +25,7 @@ client.on('message', (channel, tags, message, self) => {
 
 	// CMD pour 21
 	if(message.toLowerCase() === '!21') {
-		client.say(channel, `@${tags.username} 21JumpClick est un serveur GTARP public avec whitelist ! plus d'info ici : https://kiwinetwork.xyz/21`);
+		client.say(channel, `@${tags.username} 21JumpClick est un serveur GTARP public avec whitelist ! plus d'info ici : https://21jumpclick.fr`);
 	}
 
 });
