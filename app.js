@@ -19,7 +19,7 @@ client.on('message', (channel, tags, message, self) => {
 	if(self) return;
 
 	// CMD pour dire hello
-	if(message.toLowerCase() === 'hello') {
+	if(message.toLowerCase().includes("hello") === true) {
 		client.say(channel, `Hello @${tags.username} !`);
 	}
 
@@ -27,7 +27,6 @@ client.on('message', (channel, tags, message, self) => {
 	if(message.toLowerCase() === '!21') {
 		client.say(channel, `@${tags.username} 21JumpClick est un serveur GTARP public avec whitelist ! plus d'info ici : https://kiwinetwork.xyz/21`);
 	}
-
 
 });
 	
